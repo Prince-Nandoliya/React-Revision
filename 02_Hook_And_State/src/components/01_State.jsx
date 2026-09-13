@@ -13,14 +13,13 @@ const State = () => {
 
   return (
     <>
-    
-    <h1>count number = {count}</h1>
+      <h1>count number = {count}</h1>
 
-    <button onClick={increment}>+1</button><br /><br />
-    <button onClick={decrement}>-1</button>
+      <button onClick={increment}>+1</button>
+      <br />
+      <br />
 
-
-
+      <button onClick={decrement}>-1</button>
     </>
   );
 };
