@@ -33,10 +33,18 @@ const App = () => {
     }
   };
 
+
+  const handleDelete = (id) => {
+    setTodos(todos.filter((t) => t.id !== id))
+
+  }
+
   return (
     <>
       <Addtodo addtodo={addtodo} />
-      <Listtodo todos={todos} />
+      <Listtodo todos={todos}
+      handleDelete={handleDelete}
+      />
     </>
   );
 };

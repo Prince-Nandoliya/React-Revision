@@ -1,6 +1,6 @@
 import React from "react";
 
-const Listtodo = ({todos}) => {
+const Listtodo = ({ todos, handleDelete }) => {
   return (
     <>
       <table>
@@ -9,6 +9,7 @@ const Listtodo = ({todos}) => {
             <th>id</th>
             <th>Task</th>
             <th>Descriptio</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -18,6 +19,9 @@ const Listtodo = ({todos}) => {
                 <td>{index + 1}</td>
                 <td>{t.Task}</td>
                 <td>{t.Description}</td>
+                <td>
+                  <button onClick={() => handleDelete(t.id)}>Delete</button>
+                </td>
               </tr>
             );
           })}
