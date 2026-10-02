@@ -9,7 +9,7 @@ const Listtodo = ({ todos, handleDelete }) => {
             <th>id</th>
             <th>Task</th>
             <th>Descriptio</th>
-            <th>Actions</th>
+            <th colSpan={2}>Actions</th>
           </tr>
         </thead>
         <tbody>
